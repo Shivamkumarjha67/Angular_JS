@@ -188,6 +188,20 @@
     font-style : italic;
     color : red;
   }
+
+  .input {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  h1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+  }
 </style>
 
 
@@ -198,7 +212,7 @@
         alt="the Bridgelabz logo: a bridge to Employment through a lab works."/>
 </div>
 
-<div>
+<div class ="input">
   <input (input) = "onInput($event)" [(ngModel)]="userName">
   <span class = error-output>{{this.nameError}}</span>
 </div>
