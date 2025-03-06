@@ -181,7 +181,15 @@
     margin: 0 auto;
     width: 25%;
   }
+
+  .error-output {
+    margin-left : 10px;
+    font-size : 12px;
+    font-style : italic;
+    color : red;
+  }
 </style>
+
 
 <div>
   <h1> Hello, {{this.userName}} from Bridgelabz!</h1>
@@ -191,7 +199,8 @@
 </div>
 
 <div>
-  <input type="text" [(ngModel)]="userName">
+  <input (input) = "onInput($event)" [(ngModel)]="userName">
+  <span class = error-output>{{this.nameError}}</span>
 </div>
 
 <router-outlet></router-outlet>
