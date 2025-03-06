@@ -188,7 +188,8 @@
     {{this.title}}
   </h1>
 
-  <img [src] = "imgUrl" alt="the Bridgelabz logo: a bridge to Employment through a lab works."/>
+  <img [src] = "imgUrl" (click) = "onClick($event)"
+        alt="the Bridgelabz logo: a bridge to Employment through a lab works."/>
 </div>
 
 <router-outlet></router-outlet>
